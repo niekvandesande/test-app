@@ -3,12 +3,14 @@ lock "3.8.0"
 
 set :application, "test-app"
 set :repo_url, "git@github.com:niekvandesande/test-app.git"
+set :passenger_restart_with_touch, true
+set :user, "niek"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/home/deploy/my_app_name'
+set :deploy_to, '/home/deploy/test-app'
 
 append :linked_files, "config/database.yml", "config/secrets.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"

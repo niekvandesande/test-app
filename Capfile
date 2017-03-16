@@ -2,10 +2,15 @@
 require "capistrano/setup"
 
 # Include default deployment tasks
-require "capistrano/deploy"
-require 'capistrano/rails'
-require 'capistrano/passenger'
+require 'capistrano/deploy'
 require 'capistrano/rbenv'
+require 'capistrano/rbenv_vars'
+# require 'capistrano/bundler'
+# require 'capistrano/rails/migrations'
+# require 'capistrano/rails/assets'
+require 'capistrano/passenger'
+require 'capistrano/rails'
+
 set :rbenv_type, :user
 set :rbenv_ruby, '2.4.0'
 
