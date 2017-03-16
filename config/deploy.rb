@@ -12,8 +12,8 @@ set :user, "niek"
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/home/deploy/test-app'
 
-append :linked_files, "config/database.yml", "config/secrets.yml"
-append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
+set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
