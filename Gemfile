@@ -40,6 +40,8 @@ gem 'capistrano-passenger'
 gem 'capistrano-rails'
 gem 'capistrano-rbenv'
 gem 'capistrano-rbenv-vars'
+gem 'capistrano-bundler'
+gem 'capistrano3-puma'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
