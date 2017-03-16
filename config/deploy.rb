@@ -1,8 +1,8 @@
 server '86.83.154.136', roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'https://github.com/niekvandesande/test-app.git'
-set :application,     'appname'
-set :user,            'deploy'
+set :application,     'test-app'
+set :user,            'niek'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
