@@ -11,6 +11,7 @@ require 'capistrano/bundler'
 require 'capistrano/passenger'
 require 'capistrano/rails'
 require 'capistrano/puma'
+require 'capistrano/secrets_yml'
 
 set :rbenv_type, :user
 set :rbenv_ruby, '2.4.0'
