@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @test.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @test.password %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @test.email %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @test.age %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @test.phone %>
+</p>
+
+<%= link_to 'Edit', edit_test_path(@test) %> |
+<%= link_to 'Back', tests_path %>
