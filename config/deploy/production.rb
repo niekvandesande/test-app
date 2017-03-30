@@ -50,10 +50,10 @@
 # The server-based syntax can be used to override options:
 # ------------------------------------
 server "86.83.154.136",
-  user: "niek",
+  user: "ubuntu",
   roles: %w{web app db},
   ssh_options: {
-    user: "niek", # overrides user setting above
+    user: "ubuntu", # overrides user setting above
     keys: %w($HOME/.ssh/id_rsa),
     forward_agent: true,
     auth_methods: %w(publickey password),

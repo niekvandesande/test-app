@@ -19,3 +19,5 @@ production:
   adapter: postgresql
   encoding: unicode
   database: test-app-prod
+  username: "deploy"
+  password: "gekenhaan1"
