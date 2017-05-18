@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @web_hosting.title %>
+</p>
+
+<p>
+  <strong>Context:</strong>
+  <%= @web_hosting.context %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @web_hosting.image %>
+</p>
+
+<%= link_to 'Edit', edit_web_hosting_path(@web_hosting) %> |
+<%= link_to 'Back', web_hostings_path %>

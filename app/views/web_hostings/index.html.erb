@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Web Hostings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Context</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @web_hostings.each do |web_hosting| %>
+      <tr>
+        <td><%= web_hosting.title %></td>
+        <td><%= web_hosting.context %></td>
+        <td><%= web_hosting.image %></td>
+        <td><%= link_to 'Show', web_hosting %></td>
+        <td><%= link_to 'Edit', edit_web_hosting_path(web_hosting) %></td>
+        <td><%= link_to 'Destroy', web_hosting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Web Hosting', new_web_hosting_path %>
